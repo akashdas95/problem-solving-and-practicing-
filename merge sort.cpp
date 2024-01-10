@@ -2,7 +2,7 @@
 using namespace std;
 
 
-bool mergeall(int arr[], int l, int mid, int r)
+void mergeall(int arr[], int l, int mid, int r)
 {
     int n1 = mid-l+1;
     int n2 = r-mid;
@@ -53,7 +53,7 @@ bool mergeall(int arr[], int l, int mid, int r)
 }
 
 
-bool mergesort(int arr[], int l, int r)
+void mergesort(int arr[], int l, int r)
 {
     if(l<r)
     {

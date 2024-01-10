@@ -48,10 +48,13 @@ int main()
         col_start++;
     }
     cout<<endl;
+
+
+
     //matrix transpose
-    for(int i=0; i<r; i++)
+    for(int i=0; i<r-1; i++)
     {
-        for(int j=i;j<c; j++)
+        for(int j=i+1;j<c; j++)
         {
             swap(arr[i][j],arr[j][i]);
         }

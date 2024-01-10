@@ -1,7 +1,32 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+
+//brute force
 int main()
+{
+    int n;
+    cin>>n;
+    int arr[n];
+    for (int i=0; i<n; i++){
+        cin>>arr[i];
+    }
+    int best=-2e9;
+    for (int i=0;i<n;i++){
+    int sum=0;
+        for(int j=i; j<n; j++)
+        {
+            sum += arr[j];
+            best = max(best,sum);
+        }
+    }
+    cout<<best;
+    return 0;
+}
+
+
+//optimized
+/*int main()
 {
     int n;
     cin>>n;
@@ -16,9 +41,9 @@ int main()
     }
     cout<<best;
     return 0;
-}
+}*/
 
-//2nd approach
+// optimized as previous
 
 /*#include<bits/stdc++.h>//AC
 using namespace std;
@@ -43,3 +68,6 @@ int main()
     cout<<ans;
     return 0;
 }*/
+
+
+
